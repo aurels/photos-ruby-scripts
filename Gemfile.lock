@@ -1,18 +1,47 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.6.0)
+      public_suffix (>= 2.0.2, < 4.0)
+    bcrypt (3.1.12)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
+    concurrent-ruby (1.1.4)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
     mini_exiftool (2.9.0)
+    multi_xml (0.6.0)
+    mustermann (1.0.3)
+    oauth2-client (2.0.0)
+      addressable (~> 2.3)
+      bcrypt-ruby (~> 3.0)
     optimist (3.0.0)
+    public_suffix (3.0.3)
+    rack (2.0.6)
+    rack-protection (2.0.5)
+      rack
     ruby-progressbar (1.10.0)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
     table_print (1.5.6)
+    tilt (2.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  httparty
+  i18n
   mini_exiftool
+  oauth2-client
   optimist
   ruby-progressbar
+  sinatra
   table_print
 
 BUNDLED WITH
